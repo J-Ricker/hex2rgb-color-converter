@@ -107,7 +107,12 @@ hex.addEventListener('blur', function() {
 
 rgb.addEventListener('keyup', function() {
     let color = rgb.value;
-    if (condition) {
-        
+    if (checkRgb(color)) {
+        hex.value = color = addPound(rgbToHex(color));
+        document.body.style.backgroundColor = color;
+        checkBG(getContrastYIQ(color));
     }
+});
+document.addEventListener('keyup', function() {
+    errerMark();
 })
