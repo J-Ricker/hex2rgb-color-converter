@@ -36,9 +36,9 @@ function hexToRgb(hex) {
     if (hex.length != 6) {
         hex = modifyHex(hex);
     }
-    x.parse(parseInt(hex.slice(0, 2), 16));
-    x.parse(parseInt(hex.slice(2, 4), 16));
-    x.parse(parseInt(hex.slice(4, 6), 16));
+    x.push(parseInt(hex.slice(0, 2), 16));
+    x.push(parseInt(hex.slice(2, 4), 16));
+    x.push(parseInt(hex.slice(4, 6), 16));
     return "rgb(" + x.toString() + ")";
 }
 
