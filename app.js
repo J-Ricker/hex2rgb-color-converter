@@ -114,5 +114,5 @@ rgb.addEventListener('keyup', function() {
     }
 });
 document.addEventListener('keyup', function() {
-    errerMark();
+    errorMark();
 })
